@@ -1,0 +1,64 @@
+{% extends 'admin_pages/main.html' %}
+{% block page_title %}
+Edit Student |  Username : {{ username }} | #ID : {{ id }}
+{% endblock page_title %}
+{% block main_content %}
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-12">
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Edit Student</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form role="form" action="/student_edit_save" method="post">
+                {% csrf_token %}
+              <div class="card-body">
+
+                  {% for field in form %}
+                <div class="form-group">
+                    {{ field.errors }}
+                    {{ field.label_tag }}
+                    {{ field }}
+                </div>
+                  {% endfor %}
+
+                 <div class="form-group">
+                    {% if messages %}
+                      {% for message in messages %}
+                      {% if message.tags == 'error' %}
+                      <div class="alert alert-danger" style="margin-top:10px">{{ message }}</div>
+                      {% endif %}
+                      {% if message.tags == 'success' %}
+                      <div class="alert alert-success" style="margin-top:10px">{{ message }}</div>
+                      {% endif %}
+                      {% endfor %}
+                    {% endif %}
+                  </div>
+
+              </div>
+              <!-- /.card-body -->
+
+              <div class="card-footer">
+                <button name="button" value="submit" type="submit" class="btn btn-primary btn-block">Edit Student</button>
+              </div>
+
+              <div class="card-footer">
+                <button name="button" value="delete" type="submit" class="btn btn-danger btn-block">Delete student</button>
+              </div>
+            </form>
+            <!-- /.card -->
+
+
+
+          </div>
+          </div>
+      </div>
+    </section>
+    <!-- /.content -->
+{% endblock main_content %}
+
