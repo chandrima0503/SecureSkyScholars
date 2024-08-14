@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
+from decouple import config
+
+RECAPTCHA_PUBLIC_KEY = config('RECAPTCHA_PUBLIC_KEY')
+RECAPTCHA_PRIVATE_KEY = config('RECAPTCHA_PRIVATE_KEY')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent

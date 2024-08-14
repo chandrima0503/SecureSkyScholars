@@ -9,6 +9,7 @@ from django.contrib.auth import login, logout
 from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
 from django.core.management import call_command
+from django.conf import settings
 
 from students_app.backend_email import BackendEmail
 from students_app.models import CustomisedUser, ModelCourses, ModelSessionYear
@@ -33,7 +34,7 @@ def do_login(request):
         return HttpResponse("<h2>Method Not Allowed</h2>")
     token_captcha=request.POST.get("g-recaptcha-response")
     url_cap="https://www.google.com/recaptcha/api/siteverify"
-    secret_cap="6LcH_SYqAAAAAOvihfjK93PZSXTQXk8tAQhKMIu3"
+    secret_cap=settings.RECAPTCHA_PUBLIC_KEY
     cap_data={"secret":secret_cap,"response":token_captcha}
     server_cap_response=requests.post(url=url_cap,data=cap_data, timeout= 20)
     json_cap=json.loads(server_cap_response.text)

@@ -5,3 +5,4 @@ mysqlclient
 fcm_django
 gunicorn
 psycopg2-binary>=2.9.0
+python-decouple
