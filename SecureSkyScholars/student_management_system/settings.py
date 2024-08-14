@@ -78,12 +78,12 @@ WSGI_APPLICATION = 'student_management_system.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'studentManagementSystem',
+        'ENGINE': 'django.db.backends.postgres',
+        'NAME': 'student_management_system_bv1f',
         'USER': 'root',
-        'PASSWORD': 'Welcome@123',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'PASSWORD': 'x3uKZZI9bTyjfO7YQesopouuaLDwrJLJ',
+        'HOST': 'postgresql://root:x3uKZZI9bTyjfO7YQesopouuaLDwrJLJ@dpg-cqudotqj1k6c73dul8s0-a.singapore-postgres.render.com/student_management_system_bv1f',
+        'PORT': '5432',
     }
 }
 
