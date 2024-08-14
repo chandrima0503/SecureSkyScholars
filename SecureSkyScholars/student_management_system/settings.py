@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'student_management_system.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgres',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'student_management_system_bv1f',
         'USER': 'root',
         'PASSWORD': 'x3uKZZI9bTyjfO7YQesopouuaLDwrJLJ',
