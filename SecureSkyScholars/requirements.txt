@@ -1,0 +1,5 @@
+pip install requests
+pip install Django
+pip install mysql-client
+pip install mysqlclient
+pip install fcm_django

@@ -1,0 +1,1 @@
+web: gunicorn SecureSkyScholars.wsgi --log-file -
