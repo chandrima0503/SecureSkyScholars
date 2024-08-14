@@ -33,7 +33,7 @@ def do_login(request):
         return HttpResponse("<h2>Method Not Allowed</h2>")
     token_captcha=request.POST.get("g-recaptcha-response")
     url_cap="https://www.google.com/recaptcha/api/siteverify"
-    secret_cap="6Lc3T6EnAAAAAGo2zlEYtuylM0CHaWtxhczW5teV"
+    secret_cap="6LcH_SYqAAAAAOvihfjK93PZSXTQXk8tAQhKMIu3"
     cap_data={"secret":secret_cap,"response":token_captcha}
     server_cap_response=requests.post(url=url_cap,data=cap_data, timeout= 20)
     json_cap=json.loads(server_cap_response.text)
