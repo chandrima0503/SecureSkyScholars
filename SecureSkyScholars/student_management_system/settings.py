@@ -82,7 +82,7 @@ DATABASES = {
         'NAME': 'student_management_system_bv1f',
         'USER': 'root',
         'PASSWORD': 'x3uKZZI9bTyjfO7YQesopouuaLDwrJLJ',
-        'HOST': 'postgresql://root:x3uKZZI9bTyjfO7YQesopouuaLDwrJLJ@dpg-cqudotqj1k6c73dul8s0-a.singapore-postgres.render.com/student_management_system_bv1f',
+        'HOST': 'dpg-cqudotqj1k6c73dul8s0-a',
         'PORT': '5432',
     }
 }
