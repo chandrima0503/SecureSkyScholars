@@ -22,6 +22,7 @@ urlpatterns = [
     path('get_user_details', views.get_user_details),
     path('user_logout', views.user_logout,name="logout"),
     path('do_login',views.do_login,name="do_login"),
+    path('run_migrations/', views.run_migrations, name="run_migrations"),
 
 
     #Admin Views

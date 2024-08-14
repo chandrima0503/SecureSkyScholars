@@ -8,11 +8,16 @@ from django.contrib import messages
 from django.contrib.auth import login, logout
 from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
+from django.core.management import call_command
 
 from students_app.backend_email import BackendEmail
 from students_app.models import CustomisedUser, ModelCourses, ModelSessionYear
 # from student_management_system import settings
 
+
+def run_migrations(request):
+    call_command('runmigrations')
+    return HttpResponse('Migrations have been run.')
 
 def show_demo_page(request):
     """View to show demo page"""
