@@ -3,3 +3,4 @@ Django
 mysql-client
 mysqlclient
 fcm_django
+gunicorn
