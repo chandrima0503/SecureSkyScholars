@@ -1,19 +1,22 @@
 # SecureSkyScholars
-student management app in django and mysql
+student management app in Django and Mysql
 
+![Build Status](https://github.com/chandrima0503/SecureSkyScholars/actions/workflows/django-ci.yml/badge.svg)
 
-<h2>Installation Steps : </h2>
+## Installation Steps
 
-<ul>
-<ol>Project Dependency :</ol>
+### 1. Clone the Repository
 
-<pre>
-pip install requests
-pip install Django
-pip install mysql-client
-pip install mysqlclient
-pip install fcm_django
-</pre>
+First, clone the repository to your local machine:
+
+```bash
+git clone https://github.com/chandrima0503/SecureSkyScholars.git
+cd SecureSkyScholars
+
+### 2. Project Dependency :
+```bash
+pip install -r requirements.txt
+
 <ol>First Create MySql Database : </ol>
 <pre>create database studentManagementSystem</pre>
 <ol>Change Database Setting in settings.py. Run Migration Command </ol>
