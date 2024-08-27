@@ -1,7 +1,7 @@
 # SecureSkyScholars
 student management app in Django and Mysql
 
-![Build Status](https://github.com/chandrima0503/SecureSkyScholars/actions/workflows/django-ci.yml/badge.svg)
+![Build Status](https://github.com/chandrima0503/SecureSkyScholars/actions/workflows/django.yml/badge.svg)
 
 ## Installation Steps
 
