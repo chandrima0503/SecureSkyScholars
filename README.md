@@ -2,6 +2,7 @@
 student management app in Django and Mysql
 
 ![Build Status](https://github.com/chandrima0503/SecureSkyScholars/actions/workflows/django.yml/badge.svg)
+![Test Status](https://github.com/chandrima0503/SecureSkyScholars/actions/workflows/django.yml/badge.svg?event=push)
 
 ## Installation Steps
 
